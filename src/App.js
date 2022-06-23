@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Buscador from "./pages/Buscador";
+import EscogerVuelo from "./pages/EscogerVuelo";
+import RegistroPasajero from "./pages/RegistroPasajero";
+import ServicioEspecial from "./pages/ServicioEspecial";
+import Pagar from "./pages/Pagar";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path={"/"} element={<Navigate replace to={"/buscador"} />} />
+      <Route path={"/buscador"} element={<Buscador />} />
+      <Route path={"/escoger_vuelo"} element={<EscogerVuelo />} />
+      <Route path={"/registro"} element={<RegistroPasajero />} />
+      <Route path={"/servicio"} element={<ServicioEspecial />} />
+      <Route path={"pagar"} element={<Pagar />} />
+    </Routes>
   );
 }
 
