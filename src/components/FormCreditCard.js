@@ -22,8 +22,8 @@ export default class FormCreditCard extends React.Component{
       } 
 render(){
     return(
-        <div class="card container" >
-            <div class="card-body">
+        <div class="card p-2 m-3 border-0" >
+            <div class="card-body ">
             <form >
                 <div class="form-group ">
                     <input

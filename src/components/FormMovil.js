@@ -5,9 +5,9 @@ import captcha from "../img/captcha.jpg"
 const  FormMovil = ()=>{
     
     return(
-        <div class="card container m-5">
+        <div class="card p-2 m-3 border-0 ">
             <div class="card-body">
-                <form >
+                <form class="pr-3">
                     <div clas="form-group">
                         <label for="Linea"> Linea</label>
                         <input 
