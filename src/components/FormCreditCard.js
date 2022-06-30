@@ -20,6 +20,7 @@ export default class FormCreditCard extends React.Component{
         
         this.setState({ [name]: value });
       } 
+      
 render(){
     return(
         <div class="card p-2 m-3 border-0" >
@@ -30,7 +31,7 @@ render(){
                     class="form-control"
                     type="text"
                     name="number"
-                    maxLength="16"
+                    pattern="[0-9]{0,16}"
                     placeholder="Número de tarjeta de credito"
                     onChange={this.handleInputChange}
                     onFocus={this.handleInputFocus}
