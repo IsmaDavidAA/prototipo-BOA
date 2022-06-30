@@ -65,7 +65,7 @@ export default function Pagar() {
               </div>
               <div class="custom-control custom-checkbox mx-auto ">
                 <input type="checkbox" class="custom-control-input mx-3 " id="customCheck1" required></input>
-                <label class="custom-control-label" for="customCheck1"> He leido y acepto los <a href="#">términos y condiciones</a></label>
+                <label class="custom-control-label" for="customCheck1"> He leido y acepto los <a href="https://www.ticketsbolivia.com.bo/assets/js/lib/pdf/condiciones.pdf" target="_blank">términos y condiciones</a></label>
                 <div class="invalid-feedback">Example invalid feedback text</div>
               </div>
             </form>

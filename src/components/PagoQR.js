@@ -1,8 +1,13 @@
 import React from "react";
 import QRCode from "react-qr-code";
 
-const PagoQR = () =>{
 
+const PagoQR = () =>{
+const descargar = () =>{
+    return(
+        alert("Tu codigo sera descargado pronto, gracias por pagar!!!")
+    )
+}
 return(
     <div class="card p-2 m-3 border-0">
         <div class="card-body ">
@@ -15,7 +20,7 @@ return(
                         </svg>
                     </button>
             </div>
-            <div class="d-inline d-flex justify-content-center p-2" >
+            <div class="d-inline d-flex justify-content-center p-2" onClick ={ ()=>descargar()} >
                <button class="btn btn-lg btn-block " >
                 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="48" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
