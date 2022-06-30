@@ -65,7 +65,7 @@ export default function ExtraLuggage() {
   };
 
   return (
-    <div as={Col} className="col-12 bg-primary my-auto">
+    <div as={Col} className="col-12 bg-primary my-auto mt-3">
       <Button className="text-center text-white col-12" onClick={handleOpen}>
         <h4>Equipaje extra</h4>
       </Button>
