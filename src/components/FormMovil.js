@@ -3,7 +3,7 @@ import React ,{useState}from "react";
 import captcha from "../img/captcha.jpg"
 
 const  FormMovil = ()=>{
-    
+
     return(
         <div class="card p-2 m-3 border-0 ">
             <div class="card-body">
@@ -15,6 +15,7 @@ const  FormMovil = ()=>{
                         type = "text"
                         class = "form-control"
                         placeholder = "Numero de la linea"
+
                         >
                         
                         </input>
@@ -27,16 +28,18 @@ const  FormMovil = ()=>{
                         type = "text"
                         class = "form-control"
                         placeholder = "Nombre del abonado"
+
                         >
                         </input>                
                     </div>
                     <div clas="form-group">
-                        <label for="numero"> Número</label>
+                        <label for="numero"> Nro. Documento</label>
                         <input 
                         name="numero"
                         type = "text"
                         class = "form-control"
                         placeholder = "Número del abonado"
+                    
                         >
                         </input>                
                     </div>
@@ -52,6 +55,7 @@ const  FormMovil = ()=>{
                             type = "text"
                             class = "form-control"
                             placeholder = ""
+                      
                             >
                             </input>                
                         </div>

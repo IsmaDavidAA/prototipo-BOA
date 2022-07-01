@@ -63,10 +63,10 @@ export default function Pagar() {
                   <label for="Razon" class="d-bloclk">NIT </label>
                   <input class="form-control m-3" type="text" name="NIT"></input>
               </div>
-              <div class="custom-control custom-checkbox mx-auto ">
+              <div class="custom-control custom-checkbox justify-content-center ">
                 <input type="checkbox" class="custom-control-input mx-3 " id="customCheck1" required></input>
                 <label class="custom-control-label" for="customCheck1"> He leido y acepto los <a href="https://www.ticketsbolivia.com.bo/assets/js/lib/pdf/condiciones.pdf" target="_blank">términos y condiciones</a></label>
-                <div class="invalid-feedback">Example invalid feedback text</div>
+                
               </div>
             </form>
           </div>
