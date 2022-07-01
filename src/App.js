@@ -6,6 +6,7 @@ import EscogerVuelo from "./pages/EscogerVuelo";
 import RegistroPasajero from "./pages/RegistroPasajero";
 import ServicioEspecial from "./pages/ServicioEspecial";
 import Pagar from "./pages/Pagar";
+import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <Routes>
