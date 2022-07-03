@@ -8,6 +8,7 @@ import {
 import { PasajerosPrueba1 } from "../constants/Mocks";
 
 import { Button } from "@mui/material";
+import MyStepper from "../components/Stepper";
 export default function RegistroPasajero() {
   const { userDef, setUserDef } = useGlobal();
   const [expanded, setExpanded] = useState(false);
@@ -17,7 +18,7 @@ export default function RegistroPasajero() {
   };
   return (
     <div>
-      <h1>Registro de pasajero</h1>
+      <MyStepper as={2} />
       <div>
         <ContainerJoin>
           <p>
