@@ -16,6 +16,10 @@ export default function RegistroPasajero() {
       <div>
         <p>¿Aún eres viajero frecuente?</p>
         <button>Registrate</button>
+        <ContainerJoin>
+        
+
+        </ContainerJoin>
         <ContainerRegisterCards>
           {PasajerosPrueba1.map((data, index) => (
             <RegisterCard

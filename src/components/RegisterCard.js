@@ -195,16 +195,7 @@ const RegisterCard = (props) => {
           <ContainerRow>
             <div style={{ padding: "1rem" }}>
               <FormControlLabel
-                control={
-                  <Checkbox
-                    // checked={props.data.necesidadesEspeciales}
-                    // onChange={() => {
-                    //   props.handleChangeNecesidadesEspeciales(props.index);
-                    // }}
-                    name="checkedB"
-                    color="primary"
-                  />
-                }
+                control={<Checkbox name="checkedB" color="primary" />}
                 label="¿Es pasajero con necesidades especiales?"
               />
             </div>
