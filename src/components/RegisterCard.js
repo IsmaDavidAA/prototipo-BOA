@@ -47,7 +47,24 @@ const RegisterCard = (props) => {
       onChange={props.handleChange(props.panel)}
     >
       <AccordionSummary expandIcon={<ExpandMore />}>
-        <Typography sx={{ width: "33%", flexShrink: 0 }}>
+        {/* icon done green */}
+
+        <div
+          style={{
+            display: "flex",
+            paddingRight: "10px",
+          }}
+        >
+          <FontAwesomeIcon
+            icon={solid("circle-check")}
+            style={{
+              color: "green",
+            }}
+            size="lg"
+          />
+        </div>
+
+        <Typography sx={{ width: "20%", flexShrink: 0 }}>
           Pasajero {props.index}
         </Typography>
         {props.data.persona === MADUREZ_PERSONA.ADULTO ? (

@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import RegisterCard from "../components/RegisterCard";
 import useGlobal from "../hooks/useGlobal";
-import { ContainerRegisterCards } from "../styles/StyledComponents";
+import {
+  ContainerJoin,
+  ContainerRegisterCards,
+} from "../styles/StyledComponents";
 import { PasajerosPrueba1 } from "../constants/Mocks";
+
+import { Button } from "@mui/material";
 export default function RegistroPasajero() {
   const { userDef, setUserDef } = useGlobal();
   const [expanded, setExpanded] = useState(false);
@@ -14,11 +19,19 @@ export default function RegistroPasajero() {
     <div>
       <h1>Registro de pasajero</h1>
       <div>
-        <p>¿Aún eres viajero frecuente?</p>
-        <button>Registrate</button>
         <ContainerJoin>
-        
-
+          <p>
+            ¿Aún eres viajero frecuente?,
+            <span
+              style={{
+                textDecoration: "underline",
+                color: "blue",
+                cursor: "pointer",
+              }}
+            >
+              ¡Registrate!
+            </span>
+          </p>
         </ContainerJoin>
         <ContainerRegisterCards>
           {PasajerosPrueba1.map((data, index) => (
@@ -30,6 +43,15 @@ export default function RegistroPasajero() {
               handleChange={handleChange}
             />
           ))}
+          <div
+            style={{
+              padding: "20px",
+            }}
+          >
+            <Button variant="contained" color="primary">
+              Continuar
+            </Button>
+          </div>
         </ContainerRegisterCards>
       </div>
     </div>

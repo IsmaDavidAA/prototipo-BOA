@@ -7,7 +7,7 @@ export const ContainerRegisterCards = styled.div`
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-  padding: 0 20px;
+  padding: 20px;
 
   @media (max-width: 768px) {
   }
@@ -41,6 +41,6 @@ export const ContainerJoin = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  padding: 15px;
   width: 100%;
 `;
