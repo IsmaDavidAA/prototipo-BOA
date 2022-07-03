@@ -16,7 +16,7 @@ export const ContainerRegisterCards = styled.div`
 export const ContainerCard = styled(Box)`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin: 0 auto;
   width: 100%;

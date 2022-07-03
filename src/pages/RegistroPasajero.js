@@ -19,10 +19,10 @@ export default function RegistroPasajero() {
         <ContainerRegisterCards>
           {PasajerosPrueba1.map((data, index) => (
             <RegisterCard
-              panel={`panel${index}`}
+              panel={`panel${index + 1}`}
               expanded={expanded}
               data={data}
-              index={index}
+              index={index + 1}
               handleChange={handleChange}
             />
           ))}

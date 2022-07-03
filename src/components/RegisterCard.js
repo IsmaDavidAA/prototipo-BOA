@@ -1,10 +1,23 @@
-import { ExpandMore } from "@mui/icons-material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  CleaningServicesOutlined,
+  ExpandMore,
+  Search,
+} from "@mui/icons-material";
+import {
+  solid,
+  regular,
+  brands,
+} from "@fortawesome/fontawesome-svg-core/import.macro";
 import {
   Accordion,
   AccordionActions,
   AccordionDetails,
   AccordionSummary,
+  Checkbox,
   FormControl,
+  FormControlLabel,
+  IconButton,
   InputLabel,
   MenuItem,
   Select,
@@ -19,6 +32,7 @@ import {
   ContainerRow,
   InputContainer,
 } from "../styles/StyledComponents";
+import { MADUREZ_PERSONA } from "../constants/Constant";
 
 const RegisterCard = (props) => {
   const [DI, setDI] = React.useState("");
@@ -36,18 +50,55 @@ const RegisterCard = (props) => {
         <Typography sx={{ width: "33%", flexShrink: 0 }}>
           Pasajero {props.index}
         </Typography>
-        <Typography sx={{ color: "text.secondary" }}>
+        {props.data.persona === MADUREZ_PERSONA.ADULTO ? (
+          <FontAwesomeIcon
+            icon={solid("person-walking-luggage")}
+            style={{
+              fontSize: "1.6rem",
+            }}
+          />
+        ) : props.data.persona === MADUREZ_PERSONA.NIÑO ? (
+          <FontAwesomeIcon
+            icon={solid("child")}
+            style={{
+              fontSize: "1.6rem",
+            }}
+          />
+        ) : (
+          <FontAwesomeIcon
+            icon={solid("baby")}
+            style={{
+              fontSize: "1.6rem",
+            }}
+          />
+        )}
+        <Typography sx={{ marginLeft: "1rem", color: "text.secondary" }}>
           {props.data.persona}
         </Typography>
       </AccordionSummary>
       <AccordionDetails>
         <ContainerCard>
-          <div style={{ padding: "1rem" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              padding: "1rem",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <TextField
               id="standard-error-helper-text"
               label="Viajero frecuente"
               variant="standard"
+              style={{ paddingBottom: "0.5rem" }}
             />
+            <IconButton aria-label="search">
+              <Search />
+            </IconButton>
+            <IconButton aria-label="search">
+              <CleaningServicesOutlined />
+            </IconButton>
           </div>
           <ContainerRow>
             <div style={{ padding: "1rem" }}>
@@ -138,6 +189,23 @@ const RegisterCard = (props) => {
                 variant="standard"
                 type="date"
                 defaultValue={new Date().toISOString().substr(0, 10)}
+              />
+            </div>
+          </ContainerRow>
+          <ContainerRow>
+            <div style={{ padding: "1rem" }}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    // checked={props.data.necesidadesEspeciales}
+                    // onChange={() => {
+                    //   props.handleChangeNecesidadesEspeciales(props.index);
+                    // }}
+                    name="checkedB"
+                    color="primary"
+                  />
+                }
+                label="¿Es pasajero con necesidades especiales?"
               />
             </div>
           </ContainerRow>
