@@ -49,7 +49,16 @@ export default function RegistroPasajero() {
               padding: "20px",
             }}
           >
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => {
+                setUserDef({
+                  ...userDef,
+                  pasajeros: [],
+                });
+              }}
+            >
               Continuar
             </Button>
           </div>
