@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.precios{
+  height: 400px;
+  width: 900px;
+  padding-left: 25%;
+}
