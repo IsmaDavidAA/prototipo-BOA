@@ -4,12 +4,14 @@ import useGlobal from "../hooks/useGlobal";
 import ExtraLuggage from "../components/ExtraLuggage";
 import CarRental from "../components/CarRental";
 import Insurance from "../components/Insurace";
+import MyStepper from "../components/Stepper";
 
 export default function ServicioEspecial() {
   const { userDef, setUserDef } = useGlobal();
 
   return (
     <Container className="mt-5">
+      <MyStepper as={3} />
       <Row as={Col} className="text-center ">
         <h1>Servicios especiales(Opcional)</h1>
         <ExtraLuggage />

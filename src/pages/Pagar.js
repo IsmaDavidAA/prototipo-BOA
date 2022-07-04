@@ -4,6 +4,7 @@ import FormCreditCard from "../components/FormCreditCard";
 import BancaElectronica from "../components/BancaElectronica";
 import FormMovil from "../components/FormMovil";
 import PagoQR from "../components/PagoQR";
+import MyStepper from "../components/Stepper";
 
 export default function Pagar() {
   const { userDef, setUserDef } = useGlobal();
@@ -40,8 +41,8 @@ export default function Pagar() {
     
   }
   return (
-
-    <div class="container">
+    <div>
+      <MyStepper as={4} />
       <h1>Pagar</h1>
         <div class="card border-0 d-flex justify-content-center "> 
           <div class="card-title mx-auto">
