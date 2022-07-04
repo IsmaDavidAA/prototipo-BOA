@@ -41,9 +41,10 @@ export default function Pagar() {
     
   }
   return (
-    <div>
+    <div class="container">
       <MyStepper as={4} />
-      <h1>Pagar</h1>
+      <div clas="justify-content-center"><h1 class="mx-auto">Pagar</h1></div>
+      
         <div class="card border-0 d-flex justify-content-center "> 
           <div class="card-title mx-auto">
               <h3>Codigo de reserva</h3>
